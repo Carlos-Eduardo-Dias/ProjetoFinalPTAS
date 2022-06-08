@@ -29,7 +29,7 @@ app.post("/autor", function (req, res){
   res.json(resultado);
 });
 
-app.put("/autores/:id", function (req, res){
+app.put("/autor/:id", function (req, res){
  var resultado =  autor.update(req.body, {where : {id:req.params.id}});
  res.json(resultado) 
 });
@@ -62,7 +62,7 @@ app.post("/livro", function (req, res){
   res.json(resultado);
 });
 
-app.put("/livros/:id", function (req, res){
+app.put("/livro/:id", function (req, res){
  var resultado =  livro.update(req.body, {where : {id:req.params.id}});
  res.json(resultado)
 });
