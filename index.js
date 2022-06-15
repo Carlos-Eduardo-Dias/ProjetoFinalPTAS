@@ -3,6 +3,9 @@ var app = express();
 var { autor } = require("./models")
 var { livro } = require("./models")
 
+var cors = require('cors')
+app.use(cors())
+
 app.use(express.json());
 app.use(express.urlencoded({
   extended: true
